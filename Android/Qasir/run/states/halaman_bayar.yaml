@@ -1,0 +1,16 @@
+prestates: [
+  start, halaman_bayar, halaman_sukses_bayar
+]
+
+objectsmatch: [
+  icon_bayar, bayar
+]
+
+check: [
+  "STATE_CHECK = f.Len(temp_cash)>1"
+]
+
+success: [
+]
+
+callback: false

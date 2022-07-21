@@ -1,0 +1,19 @@
+prestates: [
+  halaman_bayar
+]
+
+objectsmatch: [
+  bayar_sukses
+]
+
+check: [
+]
+
+success: [
+  'RESULT_NOMINAL = temp_cash',
+  'RESULT_NOTRX = f.RandomNoTrx()',
+  'temp_cash= ""',
+  '~savecapture(SCREEN_CAPTURE)'
+]
+
+callback: true
