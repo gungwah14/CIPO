@@ -1,0 +1,16 @@
+prestates: [ 
+  halaman_bayar
+]
+
+objectsmatch: [
+ icon_sukses
+]
+
+check: [
+]
+
+success: [
+  '~savecapture(SCREEN_CAPTURE)'
+]
+
+callback: true

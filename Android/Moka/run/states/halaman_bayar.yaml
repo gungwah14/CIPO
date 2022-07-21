@@ -1,0 +1,20 @@
+prestates: [ 
+  start,
+  halaman_bayar,
+  halaman_sukses	
+]
+
+objectsmatch: [
+ text_cash
+]
+
+check: [
+]
+
+success: [
+  'RESULT_NOMINAL = temp_cash',
+  'RESULT_NOTRX = f.RandomNoTrx()',
+  'temp_cash= ""',
+]
+
+callback: false

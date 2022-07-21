@@ -1,0 +1,26 @@
+area:
+  x: -306
+  y: -11
+  w: 282
+  h: 47
+
+ocrconfig:
+  vars: [
+  ]
+  psm: 7
+
+pre: [
+ 'resize(2)'
+]
+
+post: [
+ 'OCR_RESULT = f.OnlyNumber(f.SkipLeft(OCR_RESULT,2))'
+]
+
+check: [
+  'OCR_CHECK = f.IsNumber(OCR_RESULT)'
+]
+
+success: [
+  'temp_cash = OCR_RESULT'
+]
