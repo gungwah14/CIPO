@@ -1,0 +1,12 @@
+prestates: [halaman_inputmenu]
+objectsmatch: [bayar]
+check: [
+]
+success: [
+  RESULT_NOTRX = temp_notrx,
+  RESULT_NOMINAL = temp_nominal,
+  temp_notrx = "",
+  temp_nominal = "",
+  '~savecapture(SCREEN_CAPTURE)',
+]
+callback: true

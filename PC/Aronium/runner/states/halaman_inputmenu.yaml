@@ -1,0 +1,7 @@
+prestates: [start, halaman_bayar]
+objectsmatch: [inputmenu]
+check: [
+]
+success: [
+]
+callback: false

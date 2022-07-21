@@ -1,0 +1,28 @@
+area:
+  x: 149
+  y: 149
+  w: 421
+  h: 70
+
+ocrconfig:
+  vars: [
+  ]
+  psm: 7
+
+pre: [
+  invert
+]
+
+post: [
+  "OCR_RESULT = f.OnlyNumber(OCR_RESULT)"
+]
+
+check: [
+  "OCR_CHECK = f.IsNumber(OCR_RESULT)"
+]
+
+success: [
+  "temp_nominal = OCR_RESULT",
+  "temp_notrx = f.RandomNoTrx()",
+  '~savecapture(SCREEN_CAPTURE)',
+]

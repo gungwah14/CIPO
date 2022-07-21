@@ -1,0 +1,8 @@
+vars: [
+  INTERVAL = 100,
+  temp_notrx,
+  temp_nominal
+]
+
+screencapture: [
+]
