@@ -1,0 +1,26 @@
+area:
+  x: 175
+  y: -1
+  w: 221
+  h: 36
+
+ocrconfig:
+  vars: [
+  ]
+  psm: 7
+
+pre: [
+
+]
+
+post: [
+
+]
+
+check: [
+
+]
+
+success: [
+  "temp_notrx = OCR_RESULT",
+]

@@ -1,0 +1,28 @@
+area:
+  x: 83
+  y: -2
+  w: 207
+  h: 29
+
+ocrconfig:
+  vars: [
+  ]
+  psm: 7
+
+pre: [
+  'invert()',
+  'resize(2)'
+]
+
+post: [
+  "OCR_RESULT = f.OnlyNumber(OCR_RESULT)"
+]
+
+check: [
+  "OCR_CHECK = f.IsNumber(OCR_RESULT)"
+]
+
+success: [
+  "temp_nominal = OCR_RESULT",
+  "~savecapture(cap1)"
+]

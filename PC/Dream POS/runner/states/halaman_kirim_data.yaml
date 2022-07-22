@@ -1,0 +1,14 @@
+prestates: [halaman_bayar]
+objectsmatch: [sukses, icon]
+check: [
+]
+success: [
+  RESULT_NOMINAL = temp_nominal,
+  RESULT_NOTRX = temp_notrx,
+  temp_notrx = "",
+  temp_nominal = "",
+  '~savecapture(cap2)',
+  '~concat(cap2, cap1, cap3)',
+  '~copy(cap3, SCREEN_CAPTURE)'
+]
+callback: true

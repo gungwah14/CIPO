@@ -1,0 +1,8 @@
+prestates: [start, halaman_bayar, halaman_kirim_data]
+objectsmatch: [bayar]
+check: [
+]
+success: [
+  
+]
+callback: false
